@@ -1,0 +1,23 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "node js/index.js",
+    "js-dev": "nodemon js/index.js",
+    "server": "node server/index.js",
+    "server-dev": "nodemon server/index.js",
+    "server-test": "node server/test/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

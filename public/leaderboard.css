@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-color:rgb(30, 30, 46);
+    color:rgb(255, 255, 194);
+    overflow:hidden;
+}
+
+h1{
+    font-size: 3.2rem;
+    color:rgb(255, 255, 194);
+    padding:0.5em 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.6rem;
+    color:rgb(255, 255, 194);
+    padding:0.5em 0;
+    text-align: center;
+}
+
+section{
+    font-size: 2.6rem;
+    padding-top: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border:none;
+    border-collapse: collapse;
+}
+
+td,th{
+    padding:0.5em 1.5em;
+    text-align: center;
+}
+
+th{
+    border-bottom: 1px solid;
+}
+
+a{
+    font-size: 1.8rem;;
+    padding-top: 2em;
+}
+
+button{
+    font-size: 2.2rem;
+    padding:0.5em 1em;
+}

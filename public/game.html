@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="images.css">
+    <link rel="stylesheet" href="game.css">
+    
+    <script src="js/fetchFunctions.js"></script>
+    <script src="js/fetchUserDetails.js"></script>
+    <script src="js/setupGame.js" ></script>
+    <script src="js/game.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-2 worm-left">
+                <img src="./images/border3.png" alt="worm" class="worm">
+            </div>
+
+            <div class="col-8">
+                <h1 class="mt-4">Remembering the Ages</h1>
+            </div>
+
+            <div class="col-2 worm-right">
+                <img src="./images/border3.png" alt="worm" class="worm">
+            </div>
+            
+            
+        </div>
+        <hr>
+    </div>
+    <h2 id="title"></h2>
+    <h2 id="start-game-h2"><button id="start-game-button">Start</button></h2>
+    <section id="card-container-section">
+        <div id="card-container"></div>
+    </section>
+    <div id="big-container" class="hidden">
+        <div class="big-container">
+            <div id="big-card-left" class="left">
+                <div class="big-card">
+                    <div id="big-left-img" class="img"></div>
+                    <h4 id="big-left-title"></h4>
+                    <hr>
+                    <div id="big-left-legend" class="legend"></div>
+                </div>
+            </div>
+            <div id="big-card-right" class="right">
+                <div class="big-card">
+                    <div id="big-right-img" class="img"></div>
+                    <h4 id="big-right-title"></h4>
+                    <hr>
+                    <div id="big-right-legend" class="legend"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div id="show-questions" class="show-questions">
+                    <div id="question-block" class="question-block hidden">
+                        <h2 id="question"></h2>
+                        <hr>
+                        <p id="answer-0"></p>
+                        <p id="answer-1"></p>
+                        <p id="answer-2"></p>
+                        <p id="answer-3"></p>
+                    </div>
+                    <div id="no-question-block" class="question-block hidden">
+                        <h2>THERE IS NO LINK BETWEEN THE TWO</h2>
+                        <button id="close-big-container-1" class="close-block">Exit</button>
+                    </div>
+                    <div id="correct-block" class="question-block hidden">
+                        <h2>THAT IS CORRECT</h2>
+                        <button id="close-big-container-2" class="close-block">Exit</button>
+                    </div>
+                    <div id="incorrect-block" class="question-block hidden">
+                        <h2>THAT IS AN INCORRECT ANSWER</h2>
+                        <button id="close-big-container-3" class="close-block">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dialog-show" class="hidden">
+        <div class="dialog-body">
+            <div class="dialog">
+                <div class="component"><h3>Congratulations. You have answered all questions correctly</h3></div>
+                <div class="component"><p id="your-score"></p></div>
+                <div class="component"><button id="leaderboard">Add To Leaderboard</button></div>
+                <div class="component"><a href="home.html"><button>Exit</button></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

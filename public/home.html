@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="js/fetchFunctions.js"></script>
+    <script src="js/messagesFunctions.js"></script>
+    <script src="js/home.js" defer></script>
+</head>
+
+<body>
+
+    <a href="index.html">
+        <button class="arrow left">
+            <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+                <polyline id="back-arrow" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    points="
+        45.63,75.8 0.375,38.087 45.63,0.375 " />
+            </svg>
+        </button>
+    </a>
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-2 worm-left">
+                <img src="./images/border2.png" alt="worm" class="worm">
+            </div>
+
+            <div class="col-8">
+                <h1 class="mt-4">Remembering the Ages</h1>
+            </div>
+
+            <div class="col-2 worm-right">
+                <img src="./images/border2.png" alt="worm" class="worm">
+            </div>
+            
+            
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="container">
+        <div class="row text-center mt-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-2 col-4">
+                <button data-active="true" class="level-button">Level One</button>
+            </div>
+            <div class="col-md-2 col-4">
+                <button data-active="false" class="level-button">Level Two</button>
+            </div>
+            <div class="col-md-2 col-4">
+                <button data-active="false" class="level-button">Level Three</button>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>  
+    
+    <div class="container">
+        <div class="row text-center mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <form>
+                    <div>
+                        <input type="text" value="" placeholder="Enter name" class="name-form">
+                    </div>
+                    <div class="mt-5">
+                        <input id="singlePlayer" type="submit" value="Single Player" class="mx-3 start-button">
+                        <input id="twoPlayer" type="submit" value="Two Player" class="mx-3 start-button">
+                        <input id="join-game" type="submit" value="Join Game" class="mx-3 start-button">
+                    </div>
+                </form>
+            </div>          
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+    <div id="dialog-show" class="hidden">
+        <div class="dialog-body">
+            <div class="dialog">
+                <div class="component"><h3 id="dialog-title"></h3></div>
+                <div id="gamesList" class="component"></div>
+                <div class="component"><button id="exit-game-button" class="hidden">Exit Game</button></div>
+                <div class="component"><button id="exit-lobby-button" class="hidden">Exit Lobby</button></div>
+            </div>
+        </div>
+    </div>
+    
+ 
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
